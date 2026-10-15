@@ -548,6 +548,10 @@
   height: 100%;
   min-width: 0;
 }
+.trace-panel > .panel-inner {
+  height: auto;
+  min-height: 100%;
+}
 .report-panel {
   display: block;
   padding: 0;
@@ -582,19 +586,19 @@
   min-width: 0;
 }
 .trace-contract {
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   min-height: 0;
 }
 .trace-input-output {
   min-height: 0;
-  flex: 1;
-  overflow: hidden;
+  flex: none;
+  overflow: visible;
 }
 .trace-input-output pre {
-  height: calc(100% - 40px);
-  max-height: 100%;
+  height: auto;
+  max-height: 300px;
   min-height: 90px;
 }
 .trace-result {
@@ -1104,6 +1108,13 @@
   .js .panel-inner {
     width: var(--panel-width, 800px);
     height: 100%;
+  }
+  .js .trace-panel {
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+  }
+  .js .trace-panel > .panel-inner {
+    height: auto;
   }
   .js .report-sheet {
     padding: var(--s5);
