@@ -162,26 +162,34 @@
   const providerCards = [
     ...document.querySelectorAll(".provider-grid article, .deployment-card"),
   ];
-  providerCards.forEach((card, index) =>
-    card.style.setProperty("--provider-index", index % 4),
-  );
+  // Prepare the first frame offscreen, then retain the completed entrance.
+  providerCards.forEach((card, index) => {
+    card.style.setProperty("--provider-index", index % 4);
+    card.classList.add("motion-ready");
+  });
   const providerObserver = new IntersectionObserver(
     (entries) => {
-      for (const entry of entries)
-        entry.target.classList.toggle("is-in-view", entry.isIntersecting);
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        entry.target.classList.add("is-in-view");
+        providerObserver.unobserve(entry.target);
+      }
     },
     { threshold: 0.15 },
   );
   providerCards.forEach((card) => providerObserver.observe(card));
-  providerObserver.observe(document.querySelector(".cloud-offer"));
+  const cloudOffer = document.querySelector(".cloud-offer");
+  cloudOffer.classList.add("motion-ready");
+  providerObserver.observe(cloudOffer);
   const securityDetails = document.querySelector(".security-details");
   const securityGrid = securityDetails.querySelector(".security-grid");
   const securityFeatures = [
     ...securityGrid.querySelectorAll(".security-feature"),
   ];
-  securityFeatures.forEach((feature, index) =>
-    feature.style.setProperty("--security-delay", `${(index % 2) * 100}ms`),
-  );
+  securityFeatures.forEach((feature, index) => {
+    feature.style.setProperty("--security-delay", `${(index % 2) * 100}ms`);
+    feature.classList.add("motion-ready");
+  });
   const detailObserver = new IntersectionObserver(
     (entries) => {
       for (const entry of entries) {
@@ -192,26 +200,32 @@
     { threshold: 0.12 },
   );
   let expansion;
-  securityDetails.addEventListener("toggle", () => {
-    expansion?.cancel();
-    detailObserver.disconnect();
-    securityFeatures.forEach((feature) =>
-      feature.classList.remove("is-revealed"),
-    );
-    if (!securityDetails.open) return;
-    const restoringPosition =
-      securityDetails.dataset.restoringPosition === "true";
-    delete securityDetails.dataset.restoringPosition;
-    if (!reduced.matches && !restoringPosition) {
-      const height = securityGrid.offsetHeight;
+  securityDetails
+    .querySelector("summary")
+    .addEventListener("click", (event) => {
+      if (securityDetails.open || reduced.matches) return;
+      event.preventDefault();
+      expansion?.cancel();
+      securityDetails.open = true;
+      // Start in the same event as opening, before a full-height frame can paint.
+      const height = securityGrid.getBoundingClientRect().height;
       expansion = securityGrid.animate(
         [{ height: "0px" }, { height: `${height}px` }],
-        {
-          duration: 600,
-          easing: "cubic-bezier(.22,1,.36,1)",
-        },
+        { duration: 600, easing: "cubic-bezier(.22,1,.36,1)" },
       );
+    });
+  securityDetails.addEventListener("toggle", () => {
+    detailObserver.disconnect();
+    securityFeatures.forEach((feature) => {
+      feature.classList.remove("is-revealed");
+      for (const animation of feature.getAnimations({ subtree: true }))
+        animation.currentTime = 0;
+    });
+    if (!securityDetails.open) {
+      expansion?.cancel();
+      return;
     }
+    delete securityDetails.dataset.restoringPosition;
     securityFeatures.forEach((feature) => detailObserver.observe(feature));
   });
   let scrollFrame = 0;

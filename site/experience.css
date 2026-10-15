@@ -67,15 +67,23 @@
     translate 450ms var(--ease),
     scale 450ms var(--ease);
 }
-.provider-grid article.is-in-view > .provider-logo {
+.provider-grid article.motion-ready > .provider-logo {
   animation: provider-logo-enter 1200ms var(--ease) both;
   animation-delay: calc(var(--provider-index) * 140ms);
+  animation-play-state: paused;
 }
+.provider-grid article.motion-ready > p,
+.provider-grid article.motion-ready > .provider-kind,
+.provider-grid article.motion-ready > .text-link {
+  animation: provider-copy-enter 850ms var(--ease) both;
+  animation-delay: calc(180ms + var(--provider-index) * 140ms);
+  animation-play-state: paused;
+}
+.provider-grid article.is-in-view > .provider-logo,
 .provider-grid article.is-in-view > p,
 .provider-grid article.is-in-view > .provider-kind,
 .provider-grid article.is-in-view > .text-link {
-  animation: provider-copy-enter 850ms var(--ease) both;
-  animation-delay: calc(180ms + var(--provider-index) * 140ms);
+  animation-play-state: running;
 }
 @keyframes provider-logo-enter {
   from {
@@ -89,7 +97,7 @@
 }
 @keyframes provider-copy-enter {
   from {
-    opacity: 0.2;
+    opacity: 0;
     transform: translateY(18px);
   }
   to {
@@ -115,11 +123,17 @@
   );
   translate: -100% 0;
 }
-.cloud-offer.is-in-view::before {
+.cloud-offer.motion-ready::before {
   animation: cloud-light 1800ms var(--ease) 200ms both;
+  animation-play-state: paused;
 }
-.cloud-offer.is-in-view > p {
+.cloud-offer.motion-ready > p {
   animation: provider-copy-enter 1000ms var(--ease) 200ms both;
+  animation-play-state: paused;
+}
+.cloud-offer.is-in-view::before,
+.cloud-offer.is-in-view > p {
+  animation-play-state: running;
 }
 @keyframes cloud-light {
   to {
@@ -165,14 +179,21 @@
   font-size: 1.125rem;
   margin-top: var(--s5);
 }
-.deployment-card.is-in-view .deployment-visual {
+.deployment-card.motion-ready .deployment-visual {
   animation: provider-logo-enter 1100ms var(--ease) both;
   animation-delay: calc(var(--provider-index) * 140ms);
+  animation-play-state: paused;
 }
-.deployment-card.is-in-view > p,
-.deployment-card.is-in-view > .text-link {
+.deployment-card.motion-ready > p,
+.deployment-card.motion-ready > .text-link {
   animation: provider-copy-enter 850ms var(--ease) both;
   animation-delay: calc(180ms + var(--provider-index) * 140ms);
+  animation-play-state: paused;
+}
+.deployment-card.is-in-view .deployment-visual,
+.deployment-card.is-in-view > p,
+.deployment-card.is-in-view > .text-link {
+  animation-play-state: running;
 }
 .deployment-signal {
   stroke-dasharray: 6 12;
@@ -627,22 +648,34 @@
   stroke-linecap: round;
   stroke-linejoin: round;
 }
-.security-feature.is-revealed .security-feature-icon {
+.security-feature.motion-ready .security-feature-icon {
   animation: security-icon-enter 850ms var(--ease) var(--security-delay) both;
+  animation-play-state: paused;
 }
-.security-feature.is-revealed .security-feature-icon > * {
+.security-feature.motion-ready .security-feature-icon > * {
   stroke-dasharray: 1;
   animation: security-icon-draw 1000ms var(--ease) var(--security-delay) both;
+  animation-play-state: paused;
 }
-.security-feature.is-revealed .type-letter {
+.security-feature.motion-ready .type-letter {
   animation: security-letter-enter 700ms var(--ease) both;
   animation-delay: calc(var(--security-delay) + var(--letter-index) * 10ms);
+  animation-play-state: paused;
 }
+.security-feature.motion-ready > p,
+.security-feature.motion-ready > .feature-note,
+.security-feature.motion-ready > .text-link {
+  animation: provider-copy-enter 850ms var(--ease) both;
+  animation-delay: calc(var(--security-delay) + 160ms);
+  animation-play-state: paused;
+}
+.security-feature.is-revealed .security-feature-icon,
+.security-feature.is-revealed .security-feature-icon > *,
+.security-feature.is-revealed .type-letter,
 .security-feature.is-revealed > p,
 .security-feature.is-revealed > .feature-note,
 .security-feature.is-revealed > .text-link {
-  animation: provider-copy-enter 850ms var(--ease) both;
-  animation-delay: calc(var(--security-delay) + 160ms);
+  animation-play-state: running;
 }
 @keyframes security-icon-enter {
   from {

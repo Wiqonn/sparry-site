@@ -1,6 +1,6 @@
 # Sparry deployment
 
-Target: **https://sparry.wiqonn.com**. Repository: **[Wiqonn/sparry-site](https://github.com/Wiqonn/sparry-site)**, branch **main**. The independent public repository has been created and is empty. The prepared package has not been committed or published.
+Target: **https://sparry.wiqonn.com**. Repository: **[Wiqonn/sparry-site](https://github.com/Wiqonn/sparry-site)**, branch **main**. The initial landing was committed and pushed with the owner's approval as `08c9e43`. GitHub Actions deployed it successfully, and Pages is configured for the Sparry subdomain. DNS and HTTPS verification are still pending.
 
 ## Existing site
 
