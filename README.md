@@ -28,7 +28,8 @@ The generated `landing/.pages/` directory is ready to become the independent rep
 .github/workflows/pages.yml
 site/
   index.html
-  index-es.html
+  es/index.html
+  index-es.html (legacy address)
   styles.css
   experience.css
   app.js
@@ -43,6 +44,8 @@ README.md
 ```
 
 The workflow publishes only `site/`. It does not install Next.js or upload application source, development scripts, review notes, browser receipts or credentials. Only referenced media, public demo downloads and their licenses are copied; old unused screenshots and chart revisions stay in the private source workspace. CSS and JavaScript URLs contain content hashes, so updated builds request fresh styles and scripts. Canonical URLs and English/Spanish alternatives use the Sparry subdomain.
+
+English uses `https://sparry.wiqonn.com/` and Spanish uses `https://sparry.wiqonn.com/es/`. Language links, canonical metadata and the sitemap use these directory URLs. Existing `index.html` and `index-es.html` addresses remain compatible; the page normalizes them in browser history while preserving the query string and section anchor. No edge redirect or DNS change is required.
 
 ## Publication and domain setup
 

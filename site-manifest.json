@@ -5,7 +5,7 @@
   },
   {
     "file": "app.js",
-    "sha256": "4ed0b9b707f3d7c88f7b5c0232cdde737dffc2d566277afb75b33fac6c950c74"
+    "sha256": "1a8e1c7e5b809d6246dc656a5cd916acc7200ba08f3a8f25cbe0dcda94141f7a"
   },
   {
     "file": "assets/audit-dashboard-v3.png",
@@ -108,16 +108,20 @@
     "sha256": "7a7934638b38ab8d1eff6464d184ae9ae9960be2d15dcb6a6b63b4330e2c83c5"
   },
   {
+    "file": "es/index.html",
+    "sha256": "ee3a7324e877e42d71e2c2afb8a08fe0c9d9a3c99a244acaf3df98e105abc474"
+  },
+  {
     "file": "experience.css",
     "sha256": "3e266d62654102e40cd6429e11358e7f1d4c2ba98c10e3b855c8141abac909a6"
   },
   {
     "file": "index-es.html",
-    "sha256": "cb11753cf3ee81ca6f97df27caf080adeacb3cf9baf50bccfb58d6ee6fa7e413"
+    "sha256": "ee3a7324e877e42d71e2c2afb8a08fe0c9d9a3c99a244acaf3df98e105abc474"
   },
   {
     "file": "index.html",
-    "sha256": "86dfcca721ffd9a9e3c630f192da37a44e010b0d2c280e43821a5bc445083ec3"
+    "sha256": "d231b207403b4a2702eea7815652c94e5035d2af968d491379e9a3879d530a73"
   },
   {
     "file": "motion.js",
@@ -129,7 +133,7 @@
   },
   {
     "file": "sitemap.xml",
-    "sha256": "f61acef82cbfa93b4a4cab0ec7bd615e2f55f87adc0ffbba21c7d55b5c666bcb"
+    "sha256": "f116c34d511e7a13c69821eb7a685dba73797523dc6c5f3414e3b8978ebb7203"
   },
   {
     "file": "styles.css",

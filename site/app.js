@@ -1,5 +1,17 @@
 (() => {
   "use strict";
+  const cleanPaths = {
+    "/index.html": "/",
+    "/index-es.html": "/es/",
+    "/es/index.html": "/es/",
+  };
+  if (cleanPaths[location.pathname]) {
+    history.replaceState(
+      history.state,
+      "",
+      cleanPaths[location.pathname] + location.search + location.hash,
+    );
+  }
   document.documentElement.classList.add("js");
   const spanish = document.documentElement.lang === "es";
   const header = document.querySelector(".site-header");
@@ -238,7 +250,7 @@
       dialog.showModal();
     }),
   );
-  fetch("assets/trace-evidence.json")
+  fetch("/assets/trace-evidence.json")
     .then((response) => {
       if (!response.ok) throw new Error("Trace unavailable");
       return response.json();
