@@ -1,0 +1,138 @@
+[
+  {
+    "file": ".nojekyll",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "app.js",
+    "sha256": "4ed0b9b707f3d7c88f7b5c0232cdde737dffc2d566277afb75b33fac6c950c74"
+  },
+  {
+    "file": "assets/audit-dashboard-v3.png",
+    "sha256": "742957ec6447bc11c59742c621ec4e669b982d66cd90e8bb8172dcb7f05f5884"
+  },
+  {
+    "file": "assets/conversation-v3.png",
+    "sha256": "a0fe209dbd211db66a93fa1de343b98bf30025b7faaa593bf648e4391d10da8b"
+  },
+  {
+    "file": "assets/IBM-Plex-Mono-OFL.txt",
+    "sha256": "d741e57d5f865e294df801f96b7b5161a88b211df65887e4358d271c9fc5fb4f"
+  },
+  {
+    "file": "assets/ibm-plex-mono.woff2",
+    "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7"
+  },
+  {
+    "file": "assets/IBM-Plex-Sans-OFL.txt",
+    "sha256": "d741e57d5f865e294df801f96b7b5161a88b211df65887e4358d271c9fc5fb4f"
+  },
+  {
+    "file": "assets/ibm-plex-sans.woff2",
+    "sha256": "e2291e842cf5af167122a22881a740c7f2dda7716f1e8cd76680264f4a859470"
+  },
+  {
+    "file": "assets/platform-apple.svg",
+    "sha256": "f68c55a66c0dabdcfdcdcf3506e08663e2a9f04b070f6ccffe17bbefb0d85af0"
+  },
+  {
+    "file": "assets/platform-linux.svg",
+    "sha256": "7e55f2779ae11a83c9dad2d0414a65d8ca7867d0716ce58bfe41ed299ae1447f"
+  },
+  {
+    "file": "assets/platform-windows.svg",
+    "sha256": "978b030d3badc0a3197eb95324a83c9e9ed50f47ea7194a8aaaca6dc9ecf0983"
+  },
+  {
+    "file": "assets/provider-claude.svg",
+    "sha256": "2d6fda79eb18ddccca35b799eeb3cece0dfabc22520ce3b10abd25668df9fa93"
+  },
+  {
+    "file": "assets/provider-codex.svg",
+    "sha256": "5a93f838425b19a1923e2fa7b9f69101d85e35585bd158b0128f449309c86c94"
+  },
+  {
+    "file": "assets/provider-local.svg",
+    "sha256": "0d7f49173c8b2053c5299977925a6e908ac5bc0d67717e146df02c2f3f9787e7"
+  },
+  {
+    "file": "assets/provider-opencode.svg",
+    "sha256": "6f7d203200ba051cdbaa726c4de0a729cee3f1cec47953f189399d951af58c4c"
+  },
+  {
+    "file": "assets/sample-audit-queries.sql",
+    "sha256": "98c901a4d662c1f3d818ede141fc9e5897302109855354d642c0d3db7c14398b"
+  },
+  {
+    "file": "assets/sample-audit-report.pdf",
+    "sha256": "abe010c33edcce3a8ae07a30cccdcc0382e72c8f44f9e9eee63bd0e95e4ff0fc"
+  },
+  {
+    "file": "assets/sample-audit-v3.pdf",
+    "sha256": "573e48227cc4eea189ce437a63eae25ba9ae58c08d0c03aaa08d4b8181479407"
+  },
+  {
+    "file": "assets/sample-audit-v3.py",
+    "sha256": "3b1d21608f1b7854f320be2eae4706475029c9edc69882dd6536a0d41ee762e1"
+  },
+  {
+    "file": "assets/Simple-Icons-LICENSE.md",
+    "sha256": "9046848b63a5c92bff14e4accca80bd987e0623b74adf9226ce5198d312b79d5"
+  },
+  {
+    "file": "assets/sparry-favicon.svg",
+    "sha256": "4f77d15db6c8acba59ff33904479b6e548876b8a6ed67a090621d8daccff866d"
+  },
+  {
+    "file": "assets/sparry-logo-light.svg",
+    "sha256": "fda3e0a494e60b3466a6f58b9fd30301c1fb99492ec082b5be48a6ee98d76c59"
+  },
+  {
+    "file": "assets/sparry-symbol-light.svg",
+    "sha256": "0aa3880ed728b1b464a6d9c2d6851c8a531387f8dfa631e0d34e43c98ce0b4fc"
+  },
+  {
+    "file": "assets/Tabler-LICENSE.txt",
+    "sha256": "b740a1d46122672da62833e97f7e7c8a13fa85cbc7445b584b297cc00dde93db"
+  },
+  {
+    "file": "assets/trace-evidence.json",
+    "sha256": "ea265942eb777987af1dc28dcc02c1b4b0a9d0a01b008a2beb9af9548db9e119"
+  },
+  {
+    "file": "assets/trace.png",
+    "sha256": "8d31fd6e3d01ac4b6f30bb98cc0da26d37869d5da6733ba2020749f7ded89e0f"
+  },
+  {
+    "file": "CNAME",
+    "sha256": "7a7934638b38ab8d1eff6464d184ae9ae9960be2d15dcb6a6b63b4330e2c83c5"
+  },
+  {
+    "file": "experience.css",
+    "sha256": "f1de7d2738f07c092d9cc6c593dcfe96254787e8f8232d77e8ddd72f0d267e33"
+  },
+  {
+    "file": "index-es.html",
+    "sha256": "136282fe0d4032346f87ee99b7f77e8c34109e8d75d5dd01b665871d6955ea08"
+  },
+  {
+    "file": "index.html",
+    "sha256": "45849798456a5f96908fe2ad41668169bc4814286b3120b3698532c3fbb3497e"
+  },
+  {
+    "file": "motion.js",
+    "sha256": "648257ed7df1209545842f7c4d9e6c5e93736578250498e95eed0fd43b4b06b6"
+  },
+  {
+    "file": "robots.txt",
+    "sha256": "40405775078df09b7758434227d9fdb357257458f496a9a2a9f4abb7bf997f40"
+  },
+  {
+    "file": "sitemap.xml",
+    "sha256": "f61acef82cbfa93b4a4cab0ec7bd615e2f55f87adc0ffbba21c7d55b5c666bcb"
+  },
+  {
+    "file": "styles.css",
+    "sha256": "25b40e1c5fce2c9a857ddb6c95c6eda9ae176ab74d6ddae146f2d81737b8bdb8"
+  }
+]

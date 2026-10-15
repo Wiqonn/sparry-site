@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sparry.wiqonn.com/sitemap.xml

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="120 30 840 1160" role="img" aria-labelledby="title" color="#11151C">
+  <title id="title">Sparry: faceted crystal S</title>
+  <path id="upper-left" fill="#404040" d="M280 260L570 440L600 590L350 450Q265 406 270 365Z" />
+  <path id="upper-side" fill="#737373" d="M570 440L900 260L900 350Q900 374 870 390L720 480Q665 510 700 550L850 690L850 760L600 590Z" />
+  <path id="upper-cut" fill="#404040" d="M680 526L850 690L850 760L600 590Z" />
+  <path id="upper-cap" fill="#ECECEC" d="M280 260L538 91Q560 76 584 89L880 247Q900 256 900 260L570 440Z" />
+  <path id="upper-cleavage" fill="#BEBEBE" d="M560 80L755 339L570 440L280 260Z" />
+  <path id="lower-body" fill="#737373" d="M210 510C300 600 435 655 550 725L780 875Q810 905 790 950L560 1110Q520 1140 480 1110L200 910Q175 890 180 850Z" />
+  <path id="lower-left" fill="#404040" d="M210 510L310 750L310 990L200 910Q175 890 180 850Z" />
+  <path id="lower-front" fill="#737373" d="M310 750L610 950L590 1090L560 1110Q520 1140 480 1110L310 990Z" />
+  <path id="lower-cap" fill="#ECECEC" d="M210 510C300 600 435 655 550 725L780 875L610 950L310 750Z" />
+  <path id="lower-end" fill="#BEBEBE" d="M610 950L780 875Q810 905 790 950L590 1090Z" />
+</svg>

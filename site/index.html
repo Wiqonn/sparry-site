@@ -1,0 +1,1240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Meet Sparry. An AI workspace for examining evidence, querying business data and creating reports you can trace. Bring your AI subscription or run a model locally."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      property="og:title"
+      content="Sparry · Ask your data. Inspect the answer."
+    />
+    <meta
+      property="og:description"
+      content="Ask a question. Follow the evidence. See the work behind the answer."
+    />
+    <meta property="og:type" content="website" />
+    <title>Sparry · Ask your data. Inspect the answer.</title>
+    <link rel="icon" href="assets/sparry-favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="assets/ibm-plex-sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles.css?v=25b40e1c5fce" />
+    <link rel="stylesheet" href="experience.css?v=f1de7d2738f0" />
+    <link rel="alternate" hreflang="en" href="https://sparry.wiqonn.com/" />
+    <link rel="alternate" hreflang="es" href="https://sparry.wiqonn.com/index-es.html" />
+    <script src="app.js?v=4ed0b9b707f3" defer></script>
+    <script src="motion.js?v=648257ed7df1" defer></script>
+    <link rel="canonical" href="https://sparry.wiqonn.com/" />
+    <meta property="og:url" content="https://sparry.wiqonn.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://sparry.wiqonn.com/" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav-glass glass" aria-label="Main navigation">
+        <a class="brand" href="#" aria-label="Sparry home"
+          ><img
+            src="assets/sparry-logo-light.svg"
+            width="111"
+            height="30"
+            alt="Sparry"
+        /></a>
+        <div class="nav-links" id="nav-links">
+          <a href="#in-action">In action</a><a href="#your-ai">Your AI</a
+          ><a href="#privacy">Local AI</a><a href="#security">Security</a>
+        </div>
+        <div class="language-switch" aria-label="Page language">
+          <a
+            href="index.html"
+            lang="en"
+            hreflang="en"
+            aria-current="page"
+            data-language="en"
+            >EN</a
+          ><a
+            href="index-es.html"
+            lang="es"
+            hreflang="es"
+            aria-label="Cambiar a español"
+            data-language="es"
+            >ES</a
+          >
+        </div>
+        <a
+          class="button button-small button-dark"
+          href="mailto:sparry@wiqonn.com"
+          >Get Sparry <span aria-hidden="true">↗</span></a
+        >
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span>
+        </button>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero section-wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">
+            <span class="headline-line">Ask Sparry.</span
+            ><span class="headline-line soft-ink">Inspect the answer.</span>
+          </h1>
+          <p class="hero-description">
+            Query your business data, build reports and review the tool calls
+            behind the results. Use your AI subscription or run a model on your
+            machine.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="mailto:sparry@wiqonn.com"
+              >Get Sparry <span aria-hidden="true">↗</span></a
+            >
+            <a class="button button-glass glass" href="#in-action"
+              >Explore the demo <span aria-hidden="true">↓</span></a
+            >
+          </div>
+          <p class="hero-footnote">macOS · Linux · Windows coming soon</p>
+        </div>
+        <div class="crystal-stage" id="hero-stage">
+          <div class="crystal-art">
+            <canvas class="crystal-strands" aria-hidden="true"></canvas>
+            <svg
+              class="crystal-mark"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="120 30 840 1160"
+              aria-hidden="true"
+            >
+              <path
+                id="hero-upper-left"
+                fill="#404040"
+                d="M280 260L570 440L600 590L350 450Q265 406 270 365Z"
+              />
+              <path
+                id="hero-upper-side"
+                fill="#737373"
+                d="M570 440L900 260L900 350Q900 374 870 390L720 480Q665 510 700 550L850 690L850 760L600 590Z"
+              />
+              <path
+                id="hero-upper-cut"
+                fill="#404040"
+                d="M680 526L850 690L850 760L600 590Z"
+              />
+              <path
+                id="hero-upper-cap"
+                fill="#ECECEC"
+                d="M280 260L538 91Q560 76 584 89L880 247Q900 256 900 260L570 440Z"
+              />
+              <path
+                id="hero-upper-cleavage"
+                fill="#BEBEBE"
+                d="M560 80L755 339L570 440L280 260Z"
+              />
+              <path
+                id="hero-lower-body"
+                fill="#737373"
+                d="M210 510C300 600 435 655 550 725L780 875Q810 905 790 950L560 1110Q520 1140 480 1110L200 910Q175 890 180 850Z"
+              />
+              <path
+                id="hero-lower-left"
+                fill="#404040"
+                d="M210 510L310 750L310 990L200 910Q175 890 180 850Z"
+              />
+              <path
+                id="hero-lower-front"
+                fill="#737373"
+                d="M310 750L610 950L590 1090L560 1110Q520 1140 480 1110L310 990Z"
+              />
+              <path
+                id="hero-lower-cap"
+                fill="#ECECEC"
+                d="M210 510C300 600 435 655 550 725L780 875L610 950L310 750Z"
+              />
+              <path
+                id="hero-lower-end"
+                fill="#BEBEBE"
+                d="M610 950L780 875Q810 905 790 950L590 1090Z"
+              />
+            </svg>
+          </div>
+          <div class="crystal-caption">
+            <span>A different angle on your data.</span
+            ><button
+              class="motion-toggle glass"
+              aria-label="Pause crystal animation"
+              aria-pressed="false"
+            >
+              <span aria-hidden="true">Ⅱ</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="source-strip section-wrap"
+        aria-label="Supported data sources"
+      >
+        <p>Start with the data you already have.</p>
+        <div class="source-names">
+          <span>PostgreSQL</span><span>MySQL</span><span>SQLite</span
+          ><span>CSV &amp; Parquet</span><span>OpenAPI</span>
+        </div>
+      </section>
+
+      <section
+        class="action-section"
+        id="in-action"
+        aria-labelledby="action-title"
+      >
+        <div class="section-wrap section-heading split-heading">
+          <h2 id="action-title">See what<br />Sparry did.</h2>
+          <p>
+            A real English conversation with GPT-5.6 Sol, connected to a
+            PostgreSQL source. Explore the report, the executed query and its
+            result. The business data is fictional.
+          </p>
+        </div>
+        <div class="feature-scene">
+          <div class="feature-sticky section-wrap">
+            <div class="demo-toolbar">
+              <div class="demo-title">
+                <img
+                  src="assets/sparry-symbol-light.svg"
+                  width="25"
+                  height="35"
+                  alt=""
+                />
+                <div>
+                  <strong>Harbor Stitch Apparel</strong
+                  ><span>2025 operations &amp; supplier payments</span>
+                </div>
+              </div>
+              <span class="sample-label">Fictional sample · GPT-5.6 Sol</span>
+            </div>
+            <div class="feature-deck" aria-label="Explore the audit demo">
+              <article class="feature-card is-active">
+                <h3 class="feature-card-heading">
+                  <button
+                    class="feature-toggle"
+                    id="tab-conversation"
+                    aria-controls="panel-conversation"
+                    aria-expanded="true"
+                  >
+                    <span>Conversation</span
+                    ><span class="feature-toggle-icon" aria-hidden="true"
+                      >−</span
+                    >
+                  </button>
+                </h3>
+                <div
+                  class="demo-panel conversation-panel"
+                  id="panel-conversation"
+                  role="region"
+                  aria-labelledby="tab-conversation"
+                  tabindex="0"
+                >
+                  <div class="conversation-copy">
+                    <h4>The question</h4>
+                    <blockquote lang="en">
+                      Review the attached Harbor Stitch Apparel data source for
+                      2025.
+                    </blockquote>
+                    <p>
+                      Sparry read the attached source, ran SQL and produced the
+                      chart and files you can inspect here.
+                    </p>
+                    <p class="small-note">
+                      Actual GPT-5.6 Sol conversation. Fictional business data.
+                    </p>
+                  </div>
+                  <button
+                    class="conversation-capture"
+                    data-image="assets/conversation-v3.png"
+                    data-image-alt="A real Sparry conversation reviewing Harbor Stitch Apparel, with a generated operational audit dashboard and downloadable evidence."
+                    aria-label="Enlarge the English conversation"
+                  >
+                    <img
+                      src="assets/conversation-v3.png"
+                      alt="The actual English conversation with its report and Sparry composer."
+                      width="1600"
+                      height="1818"
+                      loading="lazy"
+                    />
+                  </button>
+                </div>
+              </article>
+              <article class="feature-card">
+                <h3 class="feature-card-heading">
+                  <button
+                    class="feature-toggle"
+                    id="tab-sources"
+                    aria-controls="panel-sources"
+                    aria-expanded="false"
+                  >
+                    <span>Connected data</span
+                    ><span class="feature-toggle-icon" aria-hidden="true"
+                      >+</span
+                    >
+                  </button>
+                </h3>
+                <div
+                  class="demo-panel sources-panel"
+                  id="panel-sources"
+                  role="region"
+                  aria-labelledby="tab-sources"
+                  tabindex="0"
+                  hidden
+                >
+                  <div class="source-schema">
+                    <span class="source-engine">PostgreSQL</span>
+                    <h4>Harbor Stitch Apparel</h4>
+                    <p>Tables used in the captured payment query</p>
+                    <ul lang="en">
+                      <li>
+                        <span aria-hidden="true">▤</span> public.suppliers
+                      </li>
+                      <li>
+                        <span aria-hidden="true">▤</span>
+                        public.supplier_invoices
+                      </li>
+                      <li>
+                        <span aria-hidden="true">▤</span>
+                        public.supplier_payments
+                      </li>
+                    </ul>
+                    <span class="source-sample">Fictional sample source</span>
+                  </div>
+                  <div class="source-copy">
+                    <h4>Work with the data<br />you already have.</h4>
+                    <p>
+                      Attach a saved source to the conversation. Inspect its
+                      schema and query the records within the source reader's
+                      limits.
+                    </p>
+                    <div class="connector-types">
+                      <span>PostgreSQL</span><span>MySQL</span
+                      ><span>SQLite</span><span>CSV &amp; Parquet</span
+                      ><span>OpenAPI</span>
+                    </div>
+                    <a
+                      class="text-link"
+                      href="assets/trace-evidence.json"
+                      target="_blank"
+                      rel="noopener"
+                      >Inspect the source query
+                      <span aria-hidden="true">↗</span></a
+                    >
+                  </div>
+                </div>
+              </article>
+              <article class="feature-card">
+                <h3 class="feature-card-heading">
+                  <button
+                    class="feature-toggle"
+                    id="tab-dashboard"
+                    aria-controls="panel-dashboard"
+                    aria-expanded="false"
+                  >
+                    <span>Audit report</span
+                    ><span class="feature-toggle-icon" aria-hidden="true"
+                      >−</span
+                    >
+                  </button>
+                </h3>
+                <div
+                  class="demo-panel"
+                  id="panel-dashboard"
+                  hidden
+                  role="region"
+                  aria-labelledby="tab-dashboard"
+                  tabindex="0"
+                >
+                  <button
+                    class="dashboard-zoom"
+                    data-image="assets/audit-dashboard-v3.png"
+                    data-image-alt="Harbor Stitch 2025 operational dashboard showing monthly production, defect rates, supplier payments and fabric use."
+                    aria-label="Open dashboard image"
+                  >
+                    <img
+                      src="assets/audit-dashboard-v3.png"
+                      width="3960"
+                      height="2880"
+                      loading="lazy"
+                      alt="Generated audit dashboard: 130,528 units produced, 2.58% defects, a 3,595 duplicate payment candidate and 96.7% fabric efficiency."
+                    />
+                  </button>
+                  <div class="panel-caption">
+                    <button
+                      class="text-link"
+                      data-image="assets/audit-dashboard-v3.png"
+                      data-image-alt="Harbor Stitch 2025 operational dashboard showing monthly production, defect rates, supplier payments and fabric use."
+                      aria-label="Enlarge the audit dashboard"
+                    >
+                      Enlarge dashboard <span aria-hidden="true">↗</span>
+                    </button>
+                    <span
+                      >Dashboard preview. Open the full image to inspect the
+                      findings.</span
+                    ><a href="assets/sample-audit-queries.sql" download
+                      >Download SQL <span aria-hidden="true">↓</span></a
+                    >
+                  </div>
+                </div>
+              </article>
+              <article class="feature-card">
+                <h3 class="feature-card-heading">
+                  <button
+                    class="feature-toggle"
+                    id="tab-trace"
+                    aria-controls="panel-trace"
+                    aria-expanded="false"
+                  >
+                    <span>Tool activity</span
+                    ><span class="feature-toggle-icon" aria-hidden="true"
+                      >+</span
+                    >
+                  </button>
+                </h3>
+                <div
+                  class="demo-panel trace-panel"
+                  id="panel-trace"
+                  role="region"
+                  aria-labelledby="tab-trace"
+                  tabindex="0"
+                  hidden
+                >
+                  <div class="trace-contract">
+                    <div class="trace-contract-heading">
+                      <p>Captured tool input and output</p>
+                      <span>GPT-5.6 Sol / data_source / PostgreSQL</span>
+                    </div>
+                    <details class="trace-prompt">
+                      <summary>Input · The user request</summary>
+                      <p id="trace-prompt-text" lang="en"></p>
+                    </details>
+                    <div class="trace-input-output">
+                      <div>
+                        <h4>Input · Executed SQL</h4>
+                        <pre
+                          tabindex="0"
+                          aria-label="Actual executed SQL"
+                        ><code id="trace-sql" lang="en">Loading the captured query…</code></pre>
+                      </div>
+                      <div>
+                        <h4>Output · Source result</h4>
+                        <table class="trace-result">
+                          <caption>
+                            One observed result row
+                          </caption>
+                          <tbody id="trace-result"></tbody>
+                        </table>
+                        <p class="trace-complete">
+                          <span aria-hidden="true">✓</span> Completed ·
+                          Untruncated result
+                        </p>
+                      </div>
+                    </div>
+                    <button
+                      class="text-link"
+                      data-image="assets/trace.png"
+                      data-image-alt="Expanded source tool call from the real English audit conversation."
+                      aria-label="Enlarge the source tool call"
+                    >
+                      View tool activity screenshot
+                      <span aria-hidden="true">↗</span></button
+                    ><a
+                      class="text-link"
+                      href="assets/trace-evidence.json"
+                      target="_blank"
+                      rel="noopener"
+                      >Open the captured input/output JSON
+                      <span aria-hidden="true">↗</span></a
+                    >
+                    <p class="small-note">
+                      Selected event from a real conversation. Fictional data.
+                      Technical content stays in English.
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="feature-card">
+                <h3 class="feature-card-heading">
+                  <button
+                    class="feature-toggle"
+                    id="tab-report"
+                    aria-controls="panel-report"
+                    aria-expanded="false"
+                  >
+                    <span>Exported files</span
+                    ><span class="feature-toggle-icon" aria-hidden="true"
+                      >+</span
+                    >
+                  </button>
+                </h3>
+                <div
+                  class="demo-panel report-panel"
+                  id="panel-report"
+                  role="region"
+                  aria-labelledby="tab-report"
+                  tabindex="0"
+                  hidden
+                >
+                  <div class="report-sheet">
+                    <span class="eyebrow">Harbor Stitch Apparel / 2025</span>
+                    <h3>Operational audit<br />briefing.</h3>
+                    <div class="report-rule"></div>
+                    <span class="report-value">130,528</span
+                    ><span class="report-value-caption"
+                      >units of production examined</span
+                    >
+                    <p>
+                      Production quality, supplier payments and fabric
+                      efficiency, with queries and review points.
+                    </p>
+                    <span class="report-bottom"
+                      >FICTIONAL DEMONSTRATION / PDF</span
+                    >
+                  </div>
+                  <div class="report-copy">
+                    <h3>PDF, SQL and Python.<br />Ready to review.</h3>
+                    <p>
+                      Take the generated PDF into your next review. Keep the
+                      query and script alongside it, so the reasoning stays open
+                      to examination.
+                    </p>
+                    <a
+                      class="button button-dark"
+                      href="assets/sample-audit-report.pdf"
+                      target="_blank"
+                      rel="noopener"
+                      >Open the sample report
+                      <span aria-hidden="true">↗</span></a
+                    >
+                    <div class="artifact-links">
+                      <a
+                        class="text-link"
+                        href="assets/sample-audit-v3.pdf"
+                        download
+                        >Dashboard PDF <span aria-hidden="true">↓</span></a
+                      ><a
+                        class="text-link"
+                        href="assets/sample-audit-v3.py"
+                        download
+                        >Python script <span aria-hidden="true">↓</span></a
+                      ><a
+                        class="text-link"
+                        href="assets/sample-audit-queries.sql"
+                        download
+                        >Executed SQL <span aria-hidden="true">↓</span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="feature-footer">
+              <div class="feature-progress" aria-hidden="true">
+                <i class="is-active"></i><i></i><i></i><i></i><i></i>
+              </div>
+              <p class="scroll-hint">Scroll to explore, or select a panel.</p>
+              <button
+                class="text-link"
+                data-image="assets/conversation-v3.png"
+                data-image-alt="A real Sparry conversation reviewing Harbor Stitch Apparel, with a generated operational audit dashboard and downloadable evidence."
+              >
+                View the conversation <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-section" aria-labelledby="skills-title">
+        <div class="section-wrap skills-layout">
+          <div>
+            <h2 id="skills-title">
+              21 audit procedures.<br />In your workspace.
+            </h2>
+            <p>
+              Sparry includes skills for reconciliation, fraud indicators and
+              reporting. Select the procedures that match your review and
+              inspect the evidence they produce.
+            </p>
+          </div>
+          <div class="skill-list">
+            <div>
+              <h3>Financial reconciliation</h3>
+              <p>Follow balances back to the underlying records.</p>
+            </div>
+            <div>
+              <h3>Fraud indicators</h3>
+              <p>Find patterns that deserve a human review.</p>
+            </div>
+            <div>
+              <h3>Evidence &amp; reporting</h3>
+              <p>Work with spreadsheets, PDFs and visual reports.</p>
+            </div>
+            <p class="skill-more">
+              Also includes procure to pay, IT access and AI governance.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section-wrap providers-section"
+        id="your-ai"
+        aria-labelledby="providers-title"
+      >
+        <div class="section-heading split-heading">
+          <h2 id="providers-title">Choose the AI<br />you work with.</h2>
+          <p>
+            Connect a supported subscription, configure an API or select a local
+            model. Your conversations and tools share the same Sparry workspace.
+          </p>
+        </div>
+        <div class="provider-grid">
+          <article>
+            <img
+              class="provider-logo"
+              src="assets/provider-claude.svg"
+              width="42"
+              height="42"
+              alt=""
+            />
+            <h3 class="provider-name">Claude Code</h3>
+            <p>Sign in with your Claude account.</p>
+            <span class="provider-kind">Subscription</span>
+          </article>
+          <article>
+            <img
+              class="provider-logo"
+              src="assets/provider-codex.svg"
+              width="42"
+              height="42"
+              alt=""
+            />
+            <h3 class="provider-name">Codex</h3>
+            <p>Sign in with your ChatGPT account.</p>
+            <span class="provider-kind">Subscription</span>
+          </article>
+          <article>
+            <img
+              class="provider-logo"
+              src="assets/provider-opencode.svg"
+              width="42"
+              height="42"
+              alt=""
+            />
+            <h3 class="provider-name">OpenCode Go</h3>
+            <p>Connect your Go subscriber API key through OpenCode.</p>
+            <span class="provider-kind">Subscription</span>
+          </article>
+          <article>
+            <img
+              class="provider-logo"
+              src="assets/provider-local.svg"
+              width="42"
+              height="42"
+              alt=""
+            />
+            <h3 class="provider-name">Local AI</h3>
+            <p>Run a compatible model on your hardware.</p>
+            <a class="text-link" href="#privacy"
+              >Explore local AI <span aria-hidden="true">↓</span></a
+            >
+          </article>
+        </div>
+        <p class="provider-note">
+          Also supports Gemini CLI, Pi and configured LLM APIs. Each provider
+          has its own sign-in, available models and usage limits.
+        </p>
+        <article class="cloud-offer glass" aria-labelledby="cloud-title">
+          <div class="cloud-heading">
+            <h3 id="cloud-title">Sparry Cloud</h3>
+            <span class="availability-label">Coming soon</span>
+          </div>
+          <p>
+            Our own hosted service, with a choice of LLMs for working with
+            Sparry. The model lineup will be announced at launch.
+          </p>
+        </article>
+      </section>
+      <section
+        class="privacy-section"
+        id="privacy"
+        aria-labelledby="privacy-title"
+      >
+        <div class="section-wrap privacy-layout">
+          <div class="privacy-copy">
+            <h2 id="privacy-title">Run the model.<br />Keep the data local.</h2>
+            <p>
+              Run local models inside your Sparry environment, on your own
+              hardware. With local data sources, your prompts and source data
+              can stay on your machine.
+            </p>
+            <p>
+              Download and manage local models directly in Sparry. Choose a
+              hardware option that fits your computer.
+            </p>
+          </div>
+          <div
+            class="local-visual"
+            aria-label="Local model running inside the Sparry environment"
+          >
+            <div class="local-visual-heading">
+              <h3>Models inside Sparry</h3>
+              <span>Hardware overview</span>
+            </div>
+            <svg
+              viewBox="0 0 600 330"
+              role="img"
+              aria-label="Your local data flows through a model in Sparry on your hardware"
+            >
+              <path class="local-wire" d="M100 160H230M370 160H500" />
+              <path class="local-signal" d="M100 160H230M370 160H500" />
+              <rect
+                x="50"
+                y="120"
+                width="70"
+                height="85"
+                rx="10"
+                fill="#f7f7f7"
+                stroke="#dedede"
+              />
+              <path
+                d="M68 143h34m-34 14h34m-34 14h25m-25 14h34"
+                stroke="#737373"
+                stroke-width="2"
+              />
+              <rect
+                x="225"
+                y="85"
+                width="150"
+                height="150"
+                rx="24"
+                fill="#fff"
+                stroke="#404040"
+                stroke-width="2"
+              />
+              <path
+                d="M248 70v15m26-15v15m26-15v15m26-15v15m26-15v15M248 235v15m26-15v15m26-15v15m26-15v15m26-15v15M210 110h15m-15 25h15m-15 25h15m-15 25h15m-15 25h15M375 110h15m-15 25h15m-15 25h15m-15 25h15m-15 25h15"
+                stroke="#737373"
+                stroke-width="2"
+              />
+              <image
+                href="assets/sparry-symbol-light.svg"
+                x="274"
+                y="115"
+                width="52"
+                height="72"
+              />
+              <rect
+                x="480"
+                y="120"
+                width="70"
+                height="85"
+                rx="10"
+                fill="#f7f7f7"
+                stroke="#dedede"
+              />
+              <path
+                d="M498 183v-22m14 22v-36m14 36v-50"
+                stroke="#404040"
+                stroke-width="5"
+              />
+              <text x="85" y="282" text-anchor="middle">Your data</text>
+              <text x="300" y="282" text-anchor="middle">Local model</text>
+              <text x="515" y="282" text-anchor="middle">Your work</text></svg
+            ><strong class="local-hardware-name" id="local-hardware-name"
+              >Automatic hardware selection</strong
+            >
+            <p class="local-hardware-copy" id="local-hardware-copy">
+              Let Sparry use a compatible backend for your machine.
+            </p>
+          </div>
+          <div class="hardware-support">
+            <h3>Hardware backends</h3>
+            <div>
+              <button type="button" data-hardware="auto" aria-pressed="true">
+                Automatic</button
+              ><button type="button" data-hardware="cpu" aria-pressed="false">
+                CPU only</button
+              ><button
+                type="button"
+                data-hardware="nvidia"
+                aria-pressed="false"
+              >
+                NVIDIA CUDA</button
+              ><button type="button" data-hardware="apple" aria-pressed="false">
+                Apple Metal</button
+              ><button type="button" data-hardware="amd" aria-pressed="false">
+                AMD ROCm</button
+              ><button
+                type="button"
+                data-hardware="vulkan"
+                aria-pressed="false"
+              >
+                Vulkan
+              </button>
+            </div>
+            <p>
+              Availability depends on your operating system, runtime, drivers
+              and model.
+            </p>
+          </div>
+          <p class="privacy-boundary">
+            Cloud models, remote sources and web tools use their configured
+            network services. Choosing local inference does not disable those
+            connections.
+          </p>
+        </div>
+      </section>
+      <section
+        class="section-wrap security-section"
+        id="security"
+        aria-labelledby="security-title"
+      >
+        <div class="section-heading split-heading">
+          <h2 id="security-title">Security controls<br />you can configure.</h2>
+          <p>
+            AI safety controls help you review agent actions: prompt injection
+            checks, human confirmation and optional sandbox isolation with
+            scoped data access.
+          </p>
+        </div>
+        <div class="security-lab" id="security-lab">
+          <div class="security-lab-heading">
+            <h3>Follow an action through the controls.</h3>
+            <div
+              class="security-scenarios"
+              aria-label="Choose a security illustration"
+            >
+              <button type="button" data-scenario="routine" aria-pressed="true">
+                Routine query</button
+              ><button
+                type="button"
+                data-scenario="suspicious"
+                aria-pressed="false"
+              >
+                Suspicious instruction
+              </button>
+            </div>
+          </div>
+          <div
+            class="security-flow"
+            aria-label="Illustrative native-agent security flow"
+          >
+            <svg
+              class="security-route"
+              viewBox="0 0 1000 100"
+              preserveAspectRatio="none"
+              aria-hidden="true"
+            >
+              <path class="route-base" d="M125 50H875" />
+              <path class="route-progress" d="M125 50H875" pathLength="1" />
+            </svg>
+            <div class="flow-step">
+              <span class="flow-symbol" aria-hidden="true">⌘</span
+              ><span>Agent action</span>
+            </div>
+            <div class="flow-step">
+              <span class="flow-symbol" id="flow-risk" aria-hidden="true"
+                >○</span
+              ><span>Risk analysis</span
+              ><small id="flow-risk-label">LOW · EXAMPLE</small>
+            </div>
+            <div class="flow-step">
+              <span class="flow-symbol" id="flow-gate" aria-hidden="true"
+                >✓</span
+              ><span>Confirmation policy</span><small>ConfirmRisky</small>
+            </div>
+            <div class="flow-step">
+              <span class="flow-symbol" id="flow-runtime" aria-hidden="true"
+                >▣</span
+              ><span>Sandbox execution</span
+              ><small id="flow-runtime-label">Eligible to run</small>
+            </div>
+          </div>
+          <div class="security-example">
+            <pre
+              aria-label="Illustrative tool input"
+            ><code id="security-example-code" lang="en">SELECT supplier_name FROM suppliers;</code></pre>
+            <div class="security-result" aria-live="polite">
+              <strong id="security-result-title"
+                >Routine read. Within the boundary.</strong
+              >
+              <p id="security-result-copy">
+                In this example, a low-risk read passes the policy and runs
+                inside the configured sandbox.
+              </p>
+            </div>
+          </div>
+          <p class="security-lab-note">
+            Illustration of configured native-agent controls, not a live attack
+            test. Detection has limits. Sandbox, analyzer and confirmation
+            policy must be configured together.
+          </p>
+        </div>
+        <details class="security-details">
+          <summary>Explore the security controls</summary>
+          <div class="security-grid">
+            <article class="security-feature">
+              <svg
+                class="security-feature-icon"
+                viewBox="0 0 48 48"
+                aria-hidden="true"
+              >
+                <path
+                  pathLength="1"
+                  d="M24 4 42 14v20L24 44 6 34V14ZM6 14l18 10 18-10M24 24v20"
+                />
+              </svg>
+              <h3>Your own sandbox</h3>
+              <p>
+                Create an isolated execution environment for your agents. Define
+                the shared workspace, file access and network boundaries.
+              </p>
+              <span class="feature-note"
+                >Sandbox isolation is optional. Direct local mode uses your host
+                permissions. Mounts and network settings define the sandbox
+                boundary.</span
+              >
+            </article>
+            <article class="security-feature">
+              <svg
+                class="security-feature-icon"
+                viewBox="0 0 48 48"
+                aria-hidden="true"
+              >
+                <circle pathLength="1" cx="24" cy="24" r="18" />
+                <path pathLength="1" d="m15 24 6 6 13-14" />
+              </svg>
+              <h3>Action confirmation</h3>
+              <p>
+                Require confirmation before Sparry's built-in agents execute
+                actions. With an LLM risk analyzer, confirmation can focus on
+                high-risk actions.
+              </p>
+              <span class="feature-note"
+                >Enabled through the confirmation policy. External providers
+                have their own controls.</span
+              >
+            </article>
+            <article class="security-feature">
+              <svg
+                class="security-feature-icon"
+                viewBox="0 0 48 48"
+                aria-hidden="true"
+              >
+                <path
+                  pathLength="1"
+                  d="M24 4 41 11v13c0 10-9 16-17 20C16 40 7 34 7 24V11ZM24 14v12m0 6v1"
+                />
+              </svg>
+              <h3>Prompt injection defenses</h3>
+              <p>
+                Check tool actions for known injection patterns and suspicious
+                commands before they run. Configure risk analysis together with
+                action confirmation.
+              </p>
+              <span class="feature-note"
+                >Pattern, LLM and policy analyzers are available for Sparry's
+                built-in agents. Detection has limits; combine it with isolation
+                and human review.</span
+              >
+            </article>
+            <article class="security-feature">
+              <svg
+                class="security-feature-icon"
+                viewBox="0 0 48 48"
+                aria-hidden="true"
+              >
+                <ellipse pathLength="1" cx="24" cy="12" rx="17" ry="7" />
+                <path
+                  pathLength="1"
+                  d="M7 12v24c0 4 8 7 17 7s17-3 17-7V12M7 24c0 4 8 7 17 7s17-3 17-7"
+                />
+              </svg>
+              <h3>Scoped source access</h3>
+              <p>
+                Sparry's source reader supports read-only SQL, bounded results
+                and named secrets outside connection URLs.
+              </p>
+              <span class="feature-note"
+                >Use SELECT-only database accounts. The source reader's
+                restrictions do not apply to terminal tools.</span
+              >
+            </article>
+            <article class="security-feature">
+              <svg
+                class="security-feature-icon"
+                viewBox="0 0 48 48"
+                aria-hidden="true"
+              >
+                <circle pathLength="1" cx="16" cy="17" r="10" />
+                <path pathLength="1" d="m23 24 17 17m-6-6 6-6m-12 0 6-6" />
+              </svg>
+              <h3>Named credentials</h3>
+              <p>
+                Keep source credentials in named secrets rather than embedding
+                them in connection URLs.
+              </p>
+              <span class="feature-note"
+                >Credential handling depends on the connector and runtime. Give
+                each integration only the access it needs.</span
+              >
+            </article>
+            <article class="security-feature">
+              <svg
+                class="security-feature-icon"
+                viewBox="0 0 48 48"
+                aria-hidden="true"
+              >
+                <path
+                  pathLength="1"
+                  d="M7 18a18 18 0 1 1-1 13M7 7v11h11M24 13v12l10 6"
+                />
+              </svg>
+              <h3>Inspectable agent history</h3>
+              <p>
+                Review tool inputs, outputs and confirmation requests in the
+                conversation, alongside the source results.
+              </p>
+              <a class="text-link" href="#in-action"
+                >Inspect the captured tool activity
+                <span aria-hidden="true">↑</span></a
+              >
+            </article>
+          </div>
+        </details>
+      </section>
+      <section
+        class="platform-section section-wrap"
+        id="get-sparry"
+        aria-labelledby="platform-title"
+      >
+        <div class="section-heading centered">
+          <h2 id="platform-title">Get Sparry.</h2>
+          <p>
+            Use the standalone app on your computer, or run Sparry as a web
+            server and access it from your browser.
+          </p>
+        </div>
+        <div class="deployment-options">
+          <article class="deployment-card">
+            <svg
+              class="deployment-visual"
+              viewBox="0 0 300 160"
+              aria-hidden="true"
+            >
+              <rect
+                x="42"
+                y="12"
+                width="216"
+                height="136"
+                rx="16"
+                fill="#fff"
+                stroke="#dedede"
+              />
+              <path d="M42 42h216" stroke="#dedede" />
+              <circle cx="58" cy="28" r="3" fill="#737373" />
+              <circle cx="70" cy="28" r="3" fill="#aaa" />
+              <circle cx="82" cy="28" r="3" fill="#dedede" />
+              <image
+                href="assets/sparry-symbol-light.svg"
+                x="132"
+                y="60"
+                width="36"
+                height="66"
+              />
+            </svg>
+            <h3>Standalone app</h3>
+            <p>
+              Install Sparry on your computer and work in a dedicated desktop
+              app.
+            </p>
+            <a class="text-link" href="#desktop-app-options"
+              >Choose your desktop version <span aria-hidden="true">↓</span></a
+            >
+          </article>
+          <article class="deployment-card">
+            <svg
+              class="deployment-visual"
+              viewBox="0 0 300 160"
+              aria-hidden="true"
+            >
+              <rect
+                x="16"
+                y="42"
+                width="72"
+                height="32"
+                rx="8"
+                fill="#fff"
+                stroke="#dedede"
+              />
+              <rect
+                x="16"
+                y="86"
+                width="72"
+                height="32"
+                rx="8"
+                fill="#fff"
+                stroke="#dedede"
+              />
+              <path
+                d="M30 58h24m-24 44h24M88 58h24v22h35m-59 22h24V80"
+                fill="none"
+                stroke="#737373"
+              />
+              <path
+                class="deployment-signal"
+                d="M88 58h24v22h35"
+                fill="none"
+                stroke="#1c6863"
+                stroke-width="2"
+              />
+              <rect
+                x="147"
+                y="22"
+                width="137"
+                height="116"
+                rx="12"
+                fill="#fff"
+                stroke="#dedede"
+              />
+              <path d="M147 48h137m-122-13h63" stroke="#dedede" />
+              <image
+                href="assets/sparry-symbol-light.svg"
+                x="201"
+                y="64"
+                width="28"
+                height="54"
+              />
+            </svg>
+            <h3>Web server</h3>
+            <p>
+              Run Sparry on your own server and open the workspace in your
+              browser.
+            </p>
+            <a class="text-link" href="mailto:sparry@wiqonn.com"
+              >Ask about the web server <span aria-hidden="true">↗</span></a
+            >
+          </article>
+        </div>
+        <p class="platform-availability">
+          Standalone app: macOS and Linux. Native Windows coming soon.
+        </p>
+        <div
+          class="platform-switch glass"
+          id="desktop-app-options"
+          role="tablist"
+          aria-label="Choose your operating system"
+        >
+          <button
+            role="tab"
+            id="os-mac"
+            aria-controls="platform-detail"
+            aria-selected="true"
+            data-platform="mac"
+          >
+            <img
+              class="platform-logo"
+              src="assets/platform-apple.svg"
+              width="24"
+              height="24"
+              alt=""
+            />
+            macOS</button
+          ><button
+            role="tab"
+            id="os-linux"
+            aria-controls="platform-detail"
+            aria-selected="false"
+            tabindex="-1"
+            data-platform="linux"
+          >
+            <img
+              class="platform-logo"
+              src="assets/platform-linux.svg"
+              width="24"
+              height="24"
+              alt=""
+            />
+            Linux</button
+          ><button
+            role="tab"
+            id="os-windows"
+            aria-controls="platform-detail"
+            aria-selected="false"
+            tabindex="-1"
+            data-platform="windows"
+          >
+            <img
+              class="platform-logo"
+              src="assets/platform-windows.svg"
+              width="24"
+              height="24"
+              alt=""
+            />
+            Windows
+            <span class="soon">Soon</span>
+          </button>
+        </div>
+        <div
+          class="platform-detail"
+          id="platform-detail"
+          role="tabpanel"
+          aria-labelledby="os-mac"
+          tabindex="0"
+        >
+          <h3 id="platform-heading">At home on your Mac.</h3>
+          <p id="platform-description">
+            Native Apple Silicon app. macOS Ventura 13.5 or newer.
+          </p>
+          <a
+            id="platform-cta"
+            class="button button-dark"
+            href="mailto:sparry@wiqonn.com"
+            >Ask about Sparry for Mac <span aria-hidden="true">↗</span></a
+          >
+          <p id="platform-note" class="small-note">
+            Contact sparry@wiqonn.com for access and installation details.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer section-wrap">
+      <a class="brand" href="#" aria-label="Back to Sparry home"
+        ><img
+          src="assets/sparry-logo-light.svg"
+          width="103"
+          height="28"
+          alt="Sparry"
+      /></a>
+      <p>An AI workspace for business data.</p>
+      <a class="footer-contact" href="mailto:sparry@wiqonn.com"
+        >sparry@wiqonn.com</a
+      >
+      <p class="footer-note">
+        Provider names belong to their respective owners. Sparry is an
+        independent product.
+      </p>
+    </footer>
+    <dialog class="image-dialog" aria-labelledby="image-dialog-title">
+      <div class="dialog-bar glass">
+        <h2 id="image-dialog-title">Audit demo</h2>
+        <button class="dialog-close" aria-label="Close image">✕</button>
+      </div>
+      <img id="dialog-image" alt="" />
+    </dialog>
+  </body>
+</html>
