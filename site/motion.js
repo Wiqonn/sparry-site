@@ -122,7 +122,7 @@
   // A short letter reveal follows a heading's entry, keeping the brand typeface.
   const headings = [
     ...document.querySelectorAll(
-      ".section-heading h2, #skills-title, #privacy-title, .provider-name, #cloud-title, .security-feature h3, .deployment-card h3",
+      ".section-heading h2, #sources-title, #skills-title, #privacy-title, .provider-name, #cloud-title, .security-feature h3, .deployment-card h3",
     ),
   ].map((heading) => {
     const label = heading.innerText.replace(/\s+/g, " ").trim();
@@ -178,6 +178,9 @@
     { threshold: 0.15 },
   );
   providerCards.forEach((card) => providerObserver.observe(card));
+  const sourceConnections = document.querySelector(".source-access-flow");
+  sourceConnections.classList.add("motion-ready");
+  providerObserver.observe(sourceConnections);
   const cloudOffer = document.querySelector(".cloud-offer");
   cloudOffer.classList.add("motion-ready");
   providerObserver.observe(cloudOffer);

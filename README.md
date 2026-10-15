@@ -1,6 +1,6 @@
 # Sparry deployment
 
-Target: **https://sparry.wiqonn.com**. Repository: **[Wiqonn/sparry-site](https://github.com/Wiqonn/sparry-site)**, branch **main**. The initial landing was committed and pushed with the owner's approval as `08c9e43`. GitHub Actions deployed it successfully, and Pages is configured for the Sparry subdomain. DNS and HTTPS verification are still pending.
+Live site: **https://sparry.wiqonn.com**. Repository: **[Wiqonn/sparry-site](https://github.com/Wiqonn/sparry-site)**, branch **main**. GitHub Actions deploys the isolated landing export. GitHub's certificate for the subdomain is approved, Enforce HTTPS is enabled, and the Cloudflare proxy is active. HTTP redirects to HTTPS.
 
 ## Existing site
 
@@ -9,7 +9,7 @@ Inspected on 15 October 2026:
 - `/code/wiqonn.github.io` is the separate Next.js website, exported to static files and deployed by GitHub Actions to GitHub Pages.
 - Its Pages custom domain is `www.wiqonn.com`; its source branch is `master`.
 - The domain's authoritative nameservers are Cloudflare's `cloe.ns.cloudflare.com` and `elliot.ns.cloudflare.com`.
-- `sparry.wiqonn.com` currently has no A or CNAME answer. The separate landing repository was created after inspecting the existing deployment.
+- `sparry.wiqonn.com` points to `wiqonn.github.io` through Cloudflare's proxy. The record was temporarily DNS-only for GitHub's certificate validation.
 
 Use an independent Pages repository for Sparry. Keep the existing website's CNAME, workflows and DNS records intact. A subfolder of the current Next.js export would be a path on the existing website rather than an independently configured Pages custom domain.
 

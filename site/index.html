@@ -27,11 +27,11 @@
       crossorigin
     />
     <link rel="stylesheet" href="styles.css?v=25b40e1c5fce" />
-    <link rel="stylesheet" href="experience.css?v=1d3f7ed43302" />
+    <link rel="stylesheet" href="experience.css?v=3e266d626541" />
     <link rel="alternate" hreflang="en" href="https://sparry.wiqonn.com/" />
     <link rel="alternate" hreflang="es" href="https://sparry.wiqonn.com/index-es.html" />
     <script src="app.js?v=4ed0b9b707f3" defer></script>
-    <script src="motion.js?v=74683f0a7229" defer></script>
+    <script src="motion.js?v=d2ebc75cd15c" defer></script>
     <link rel="canonical" href="https://sparry.wiqonn.com/" />
     <meta property="og:url" content="https://sparry.wiqonn.com/" />
     <link rel="alternate" hreflang="x-default" href="https://sparry.wiqonn.com/" />
@@ -181,12 +181,88 @@
 
       <section
         class="source-strip section-wrap"
-        aria-label="Supported data sources"
+        id="data-connections"
+        aria-labelledby="sources-title"
       >
-        <p>Start with the data you already have.</p>
+        <div class="source-intro">
+          <h2 id="sources-title">Data connections.<br />Built into Sparry.</h2>
+          <p>
+            Connect databases, files and APIs inside the app. Choose a source,
+            configure its access and attach it to a conversation.
+          </p>
+        </div>
         <div class="source-names">
           <span>PostgreSQL</span><span>MySQL</span><span>SQLite</span
           ><span>CSV &amp; Parquet</span><span>OpenAPI</span>
+        </div>
+        <div
+          class="source-access-flow"
+          role="group"
+          aria-label="Illustration of a configured data connection"
+        >
+          <div class="source-node source-origin">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <ellipse cx="24" cy="11" rx="16" ry="6" />
+              <path
+                d="M8 11v25c0 3 7 6 16 6s16-3 16-6V11M8 23c0 3 7 6 16 6s16-3 16-6"
+              />
+            </svg>
+            <strong>Approved data source</strong>
+            <span>Read replica or export</span>
+          </div>
+          <svg
+            class="source-access-route"
+            viewBox="0 0 100 24"
+            aria-hidden="true"
+          >
+            <path d="M0 12H96m-8-7 8 7-8 7" />
+            <path
+              class="source-route-progress"
+              pathLength="1"
+              d="M0 12H96m-8-7 8 7-8 7"
+            />
+          </svg>
+          <div class="source-node source-reader">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M24 4 41 11v13c0 10-9 16-17 20C16 40 7 34 7 24V11Z" />
+              <path d="m16 24 5 5 11-12" />
+            </svg>
+            <strong>Built-in data reader</strong>
+            <span>Read-only SQL · GET-only APIs</span>
+            <span class="source-credential">Credentials kept separate</span>
+          </div>
+          <svg
+            class="source-access-route source-access-route-last"
+            viewBox="0 0 100 24"
+            aria-hidden="true"
+          >
+            <path d="M0 12H96m-8-7 8 7-8 7" />
+            <path
+              class="source-route-progress"
+              pathLength="1"
+              d="M0 12H96m-8-7 8 7-8 7"
+            />
+          </svg>
+          <div class="source-node source-workspace">
+            <img
+              src="assets/sparry-symbol-light.svg"
+              width="32"
+              height="44"
+              alt=""
+            />
+            <strong>Sparry workspace</strong>
+            <span>Inspectable queries and results</span>
+          </div>
+        </div>
+        <div class="source-access-footer">
+          <p>
+            Keep analysis off production. Use a read replica with a dedicated
+            read-only role, or an approved export. You configure the network
+            boundary.
+          </p>
+          <a class="text-link" href="#security"
+            >Explore access controls <span aria-hidden="true">↓</span></a
+          >
         </div>
       </section>
 

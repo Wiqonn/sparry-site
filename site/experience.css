@@ -145,6 +145,209 @@
   height: 24px;
   object-fit: contain;
 }
+.source-strip {
+  display: block;
+  padding-block: var(--s8);
+}
+.source-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s8);
+  align-items: end;
+}
+.source-intro h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.04em;
+}
+.source-intro > p {
+  max-width: 34rem;
+  font-size: 1.375rem;
+}
+.source-strip .source-names {
+  gap: var(--s3);
+  margin-block: var(--s6);
+  font-size: 1.25rem;
+}
+.source-names > span {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: var(--s3) var(--s4);
+}
+.source-access-flow {
+  display: grid;
+  grid-template-columns: 1fr 64px 1.15fr 64px 1fr;
+  align-items: center;
+  padding: var(--s6);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+.source-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s3);
+  text-align: center;
+  min-width: 0;
+  padding: var(--s5) var(--s3);
+}
+.source-node > svg {
+  width: 44px;
+  height: 44px;
+  fill: none;
+  stroke: var(--graphite);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.source-node > img {
+  height: 44px;
+  width: 32px;
+  object-fit: contain;
+}
+.source-node > strong {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.source-node > span {
+  color: var(--muted);
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+.source-reader {
+  --source-step: 1;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: var(--s6) var(--s4);
+  box-shadow: var(--shadow);
+}
+.source-reader > svg {
+  stroke: var(--teal);
+}
+.source-reader > .source-credential {
+  font-size: 1.0625rem;
+  color: var(--teal);
+  padding-top: var(--s3);
+  border-top: 1px solid var(--line);
+}
+.source-workspace {
+  --source-step: 2;
+}
+.source-access-route {
+  width: 100%;
+  height: 24px;
+  fill: none;
+  stroke: var(--line);
+  stroke-width: 1.5;
+}
+.source-route-progress {
+  stroke: var(--teal);
+  stroke-dasharray: 1;
+}
+.source-access-flow.motion-ready .source-node {
+  animation: source-node-enter 850ms var(--ease) both;
+  animation-delay: calc(var(--source-step, 0) * 300ms);
+  animation-play-state: paused;
+}
+.source-access-flow.motion-ready .source-route-progress {
+  animation: source-route-enter 1000ms var(--ease) 300ms both;
+  animation-play-state: paused;
+}
+.source-access-flow.motion-ready
+  .source-access-route-last
+  .source-route-progress {
+  animation-delay: 650ms;
+}
+.source-access-flow.is-in-view .source-node,
+.source-access-flow.is-in-view .source-route-progress {
+  animation-play-state: running;
+}
+@keyframes source-node-enter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes source-route-enter {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.source-access-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: var(--s7);
+  margin-top: var(--s5);
+}
+.source-access-footer > p {
+  font-size: 1.125rem;
+  max-width: 52rem;
+}
+.source-access-footer > a {
+  flex-shrink: 0;
+}
+@media (max-width: 1000px) {
+  .source-access-flow {
+    grid-template-columns: 1fr 40px 1.15fr 40px 1fr;
+    padding: var(--s4);
+  }
+  .source-access-footer {
+    gap: var(--s5);
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
+  .source-strip {
+    padding-block: var(--s7);
+  }
+  .source-intro {
+    grid-template-columns: 1fr;
+    gap: var(--s5);
+  }
+  .source-strip .source-names {
+    font-size: 1.125rem;
+  }
+  .source-access-flow {
+    grid-template-columns: 1fr;
+  }
+  .source-node {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    column-gap: var(--s4);
+    row-gap: var(--s2);
+    text-align: left;
+    padding: var(--s5) var(--s4);
+  }
+  .source-node > svg,
+  .source-node > img {
+    grid-row: 1 / span 3;
+    align-self: center;
+    justify-self: center;
+    max-width: 40px;
+  }
+  .source-node > strong,
+  .source-node > span {
+    grid-column: 2;
+  }
+  .source-node > strong {
+    font-size: 1.375rem;
+  }
+  .source-access-route {
+    width: 56px;
+    margin: var(--s3) auto;
+    rotate: 90deg;
+  }
+}
 .deployment-options {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
